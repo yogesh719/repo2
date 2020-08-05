@@ -1,0 +1,10 @@
+ Volume in drive C is Windows
+ Volume Serial Number is DE3A-6C9A
+
+ Directory of C:\Users\phulpur\Desktop\MyGit
+
+05/08/2020  02:37 PM    <DIR>          .
+05/08/2020  02:37 PM    <DIR>          ..
+05/08/2020  02:37 PM                 0 test.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  193,148,858,368 bytes free
