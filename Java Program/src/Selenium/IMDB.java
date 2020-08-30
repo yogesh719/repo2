@@ -1,5 +1,7 @@
 package Selenium;
 
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -14,13 +16,9 @@ import org.openqa.selenium.support.ui.Select;
 
 public class IMDB
 {   
-	 static int i=0;
-	
-	
-
-	public static void main(String[] args) throws InterruptedException
+    public static void main(String[] args) throws InterruptedException, FileNotFoundException
 	{
-		
+
 		System.setProperty("webdriver.chrome.driver","D:\\chromedriver\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver(); 
 	    driver.get("https://www.imdb.com/chart/top/");
@@ -37,14 +35,25 @@ public class IMDB
 	    
 	    for(WebElement option :ls)	    	
 	      {  	    	
-	        System.out.println("a");
-	        String St = option.getText();
 	       
-	        System.out.println(St);	
+	        String St = option.getText();
+	        PrintStream myconsole = new PrintStream("D://java.txt");
+				System.setOut(myconsole);
+				myconsole.print("The new List Of movies of 250 in different sortings");
+				myconsole.print(St);
+			 
+		
+
+	      }
+	    	
+	    	
+	    
+	       
+	       
 	      }
 	   
 	    } 
 	   
 	 }
 
-}
+
